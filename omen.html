@@ -1,0 +1,457 @@
+<head>
+    <link rel="Stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://img.freepik.com/premium-vector/valorant-gaming-character-mascot-design-omen-mascot-logo-design-illustration-vector_268458-430.jpg?w=2000">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.3.js">	</script>
+          <script type="text/javascript"     src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script >
+		$(document).ready(function()
+		{
+			$('#btn2').click(function()
+			{
+				$('#div1').fadeOut(2000);
+				$('#div2').fadeOut(4000);
+				$('#div3').fadeOut(6000);
+        $('#div4').fadeOut(8000);
+				$('#div5').fadeOut(10000);
+				$('#div6').fadeOut(12000);
+			})
+      $('#btn1').click(function()
+			{
+				$('#div1').fadeIn(2000);
+				$('#div2').fadeIn(4000);
+				$('#div3').fadeIn(6000);
+        $('#div4').fadeIn(8000);
+				$('#div5').fadeIn(10000);
+				$('#div6').fadeIn(12000);
+			})
+		})
+	</script>
+  
+
+    <title>OMEN</title>
+</head>
+<body>
+
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="https://img.freepik.com/premium-vector/valorant-gaming-character-mascot-design-omen-mascot-logo-design-illustration-vector_268458-430.jpg?w=2000" alt="Logo" />
+        </a>
+      </div>
+      
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html">
+              <span class="fa fa-search"></span>
+              <span>Search</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html">
+              <span class="fa fas fa-book"></span>
+              <span>Your Library</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="login.html">
+              <span class="fa fas fa-plus-square"></span>
+              <span>Create Playlist</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html">
+              <span class="fa fas fa-heart"></span>
+              <span>Liked Songs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="policies">
+        <ul>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="premium.html">Premium</a>
+            </li>
+            <li>
+              <a href="support.html">Support</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+            <li class="divider">|</li>
+            <button onclick="window.location.href='login.html'">Login</button>
+            <li>
+              <a href="registration.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spotify-playlists">
+        <h2>Omen Playlists</h2>
+		    <button id="btn2">Fade Out </button>
+        <button id="btn1">Fade In </button>
+        <br><br>
+
+        <div class="list">
+          <div class="item" id="div1">
+            <img src="https://rukminim1.flixcart.com/image/416/416/l05lx8w0/poster/l/y/g/medium-all-eyez-on-me-2pac-eyes-matte-finish-poster-butcute5005-original-imagcy64nqyxzkzx.jpeg?q=70" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>OG Top Hits</h4>
+            <p>Get into the world of 1990's</p>
+          </div>
+
+          <div class="item" id="div2">
+            <img src="https://rukminim1.flixcart.com/image/416/416/k8ot7rk0/poster/2/s/s/large-eminem-posters-for-room-office-home-hall-wall-sticker-pr-original-imafqn7bgcdfzfzp.jpeg?q=70" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>RapCaviar</h4>
+            <p>Listen from the rap god himself</p>
+          </div>
+
+          <div class="item" id="div3">
+            <img src="https://i.pinimg.com/originals/9d/ee/eb/9deeeb426205b280af45696d1f33bbec.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Best Of Taylor Swift</h4>
+            <p>Taylor Swift and her magic</p>
+          </div>
+
+          <div class="item" id="div4">
+            <img src="https://m.media-amazon.com/images/I/71QLgg51V9L._SY679_.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Rock Classics</h4>
+            <p>Rock Legends & epic songs that continue t...</p>
+          </div>
+
+          <div class="item" id="div5">
+            <img src="data:image/jpeg;base64,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" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Hits</h4>
+            <p>Kick back to the best new and recent chill...</p>
+          </div>
+
+          <div class="item" id="div6">
+            <img src="https://c.saavncdn.com/464/Kahani-Suno-2-0-English-2022-20220531195554-500x500.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Lovey Dovey</h4>
+            <p>Get into the an imaginary world where you have a girlfriend/boyfriend</p>
+          </div>
+
+          <div class="item" id="div1">
+            
+            <img src="https://i1.sndcdn.com/artworks-fCBf8YJKnLhMJqT5-XYaY0g-t500x500.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Mega Hit Mix</h4>
+            <p>A mega mix of 75 favorites from the last...</p>
+          </div>
+
+          <div class="item" id="div2" >
+            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>All out 80s</h4>
+            <p>The biggest songs of the 1090s.</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.pinimg.com/236x/30/6c/90/306c902e2b3ec8d375dd57d72aa2b020--playlists.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Brain Food</h4>
+            <p>Relax and indulge with the beauty of overthinking</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.pinimg.com/originals/c3/5a/2d/c35a2d24cf87a8d064bbd064e628b6ad.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Deep Focus</h4>
+            <p>Be a ghost and focus on yourself</p>
+          </div>
+
+          <div class="item">
+            <img src="https://m.media-amazon.com/images/I/61uAAcr1u4L._UXNaN_FMjpg_QL85_.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Instrumental Study</h4>
+            <p>Focus with soft study music in the...</p>
+          </div>
+
+          <div class="item">
+            <img src="https://img.freepik.com/free-vector/gradient-lo-fi-illustration_23-2149375749.jpg?w=2000" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Lofi Study Beats</h4>
+            <p>The perfect study beats, twenty four...</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002863b311d4b787ed621f7e696" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Coding Mode</h4>
+            <p>Dedicated to all the programmers out there.</p>
+          </div>
+          
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706c0000da84ed761de8582d7d8cef2e5153" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Gym Focus</h4>
+            <p>Beats/Music to keep you focussed rather than thinking about her</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002ea8a93a147716b5ce84897be" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Calm Before The Storm</h4>
+            <p>Calm before the storm music.</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f0000000296e08a91ef3c7a6e7bfaa9a6" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Beats to think to</h4>
+            <p>Focus with deep techno and tech house.</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="spotify-playlists">
+        
+        <h2>Focus</h2>
+        
+
+        <div class="list">
+          <div class="item">
+            <img src="https://i.pinimg.com/236x/30/6c/90/306c902e2b3ec8d375dd57d72aa2b020--playlists.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Brain Food</h4>
+            <p>Relax and indulge with the beauty of overthinking</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.pinimg.com/originals/c3/5a/2d/c35a2d24cf87a8d064bbd064e628b6ad.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Deep Focus</h4>
+            <p>Be a ghost and focus on yourself</p>
+          </div>
+
+          <div class="item">
+            <img src="https://m.media-amazon.com/images/I/61uAAcr1u4L._UXNaN_FMjpg_QL85_.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Instrumental Study</h4>
+            <p>Focus with soft study music in the...</p>
+          </div>
+
+          <div class="item">
+            <img src="https://img.freepik.com/free-vector/gradient-lo-fi-illustration_23-2149375749.jpg?w=2000" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Lofi Study Beats</h4>
+            <p>The perfect study beats, twenty four...</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002863b311d4b787ed621f7e696" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Coding Mode</h4>
+            <p>Dedicated to all the programmers out there.</p>
+          </div>
+          
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706c0000da84ed761de8582d7d8cef2e5153" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Gym Focus</h4>
+            <p>Beats/Music to keep you focussed rather than thinking about her</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002ea8a93a147716b5ce84897be" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Calm Before The Storm</h4>
+            <p>Calm before the storm music.</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f0000000296e08a91ef3c7a6e7bfaa9a6" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Beats to think to</h4>
+            <p>Focus with deep techno and tech house.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spotify-playlists">
+        <h2>Mood</h2>
+      
+
+        <div class="list">
+          <div class="item">
+            <img src="https://findmusicbox.com/assets/imagesall/Mood-Booster.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Mood Booster</h4>
+            <p>Get happy with today's dose of feel-good...</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d0000b273c441a15f756de0bbbdb17e3a" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Feelin' Good</h4>
+            <p>Feel good with this positively timeless...</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d00001e02d917af2874a19b00f6a5e7f2" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Dark & Stormy</h4>
+            <p>Beautifully dark, dramatic tracks.</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.pinimg.com/originals/de/a2/3e/dea23e755f6cabc381f6277531ba9fb6.png" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Heart Break</h4>
+            <p>What is love without a heart break</p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706c0000da84bfcf71e7af34394d22b0bdb0" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Feelin' Myself</h4>
+            <p>Are you lost baby girl? Hop on to this playlist </p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002f2d08778548e125bcb867692" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Tracks</h4>
+            <p>Softer kinda dance</p>
+          </div>
+
+          <div class="item">
+            <img src="https://lite-images-i.scdn.co/image/ab6765630000ba8a428a1f57ee019041de712b67" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>True Crime</h4>
+            <p>Online session on how to be a better criminal by assessing the past </p>
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>idk.</h4>
+            <p>idk.</p>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+
+      <div class="preview">
+        <div class="text">
+          <h6>Preview of Omen</h6>
+          <p>Sign up to get unlimited songs and podcasts with no occasional ads. Konjo music, romba fun. No credit card needed.</p>
+        </div>
+        <div class="button">
+          <button onclick="window.location.href='registration.html'">Sign up for free</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>

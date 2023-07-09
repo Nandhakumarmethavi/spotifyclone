@@ -1,0 +1,76 @@
+/* style the form container */
+form {
+    font-size: 30 px;
+    color:#ffffff;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+body {
+    background-color:#4f4fc2;
+    background: linear-gradient(to right, #ae2896, #4f4fc2);
+}
+  
+  /* style the form headings */
+  h1 {
+    color:#ffffff;
+    text-align: center;
+  }
+  h2{
+    color: #ffffff;
+  }
+  p{
+    color: #ffffff;
+  }
+  a{
+    color: #ffffff;
+  }
+  ul, li{
+    color: #ffffff;
+  }
+  /* style the form labels */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: #00ff04;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  
+  /* style the form input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  /* style the form submit button */
+  input[type="submit"] {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* style the form submit button on hover */
+  input[type="submit"]:hover {
+    background-color: #1ED760;
+  }
+  

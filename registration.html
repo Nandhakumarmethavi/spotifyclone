@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="Stylesheet" href="style1.css">
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form action="OMEN.html" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="8" required><br><br>
+      
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="age" required><br><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br><br>
+
+      <div id="college-group">
+        <label for="college">College Name</label>
+        <input type="text" id="college" name="email" required>
+      </div><br><br>
+      
+      <div id="id-group">
+        <label for="id">Id number:</label>
+        <input type="text" id="id" name="website">
+      </div><br><br>
+
+      
+      
+      <input type="submit" value="Register">
+    </form>
+    <script>
+  const collegeGroup = document.getElementById("college-group");
+  const idgroup = document.getElementById("id-group");
+  
+ 
+  collegeGroup.style.display = "none";
+  idgroup.style.display = "none";
+  
+  document.getElementById("dob").addEventListener("change", function() {
+    const age = calculateAge(this.value);
+    if (age < 18) {
+      collegeGroup.style.display = "block";
+      idgroup.style.display = "block";
+    } 
+    else {
+      collegeGroup.style.display = "none";
+      idgroup.style.display = "none";
+    }
+  });
+  
+  // helper function to calculate age from date of birth
+  function calculateAge(birthday) {
+    const today = new Date();
+    const birthDate = new Date(birthday);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
+
+    </script>
+    
+  </body>
+</html>
